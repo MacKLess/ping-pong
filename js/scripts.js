@@ -1,12 +1,21 @@
 //Business Logic
 var gameChanger = function(ppBall){
-  var result = [];
+  // var array = [];
+  var result = "";
     for (var i = 1; i <= ppBall; i ++){
-    result += i;
-  }
+      if (i % 3 == 0){
+        result += "ping";
+      }
+      else {
+        result += i;
+      }
+    }
+    // result.push(array);
+    // return result;
     return result;
 }
 
+// array.push(i);
 
 
 
