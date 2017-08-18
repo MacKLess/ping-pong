@@ -1,16 +1,21 @@
 #main {
+  padding: 2rem;
+  width: 100%;
+  height: auto;
+  background-color: inherit;
+}
+#container {
   background-image: url(../img/eyeball.jpg);
   background-size: 100%;
   color: #ccc;
   background-repeat: no-repeat;
-  height: 60rem;
-  padding: 2rem;
+  height: 100rem;
 }
-#container {
-
+#inputNumber {
+  width: 50%;
 }
-#list{
-
+#outPut {
+  background-color: rgba(172, 62, 45, 0.7);
 }
 .inPut {
   width: 100%
