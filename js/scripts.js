@@ -21,18 +21,13 @@ var gameChanger = function(ppBall){
     document.getElementById("outPut").innerHTML = "<ul><li>" + array.join("</li><li>") + "</li></ul>";
 }
 
-
-
 // User Interface Logic
 $(document).ready(function(){
   $("#inPut").submit(function(event){
     $("#outPut").text("");
     var serve = parseInt($("#inputNumber").val());
-    // debugger;
     var final = gameChanger(serve);
-    console.log(serve);
     $("#outPut").text(final);
-
   event.preventDefault();
   });
 });
