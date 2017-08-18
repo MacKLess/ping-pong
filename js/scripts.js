@@ -18,10 +18,7 @@ var gameChanger = function(ppBall){
     }
     var array = result.trim().split(" ");
 
-
     document.getElementById("outPut").innerHTML = "<ul><li>" + array.join("</li><li>") + "</li></ul>";
-
-
 }
 
 

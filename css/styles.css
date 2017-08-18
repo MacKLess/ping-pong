@@ -1,0 +1,29 @@
+#main {
+  background-image: url(../img/eyeball.jpg);
+  background-size: 100%;
+  color: #ccc;
+  background-repeat: no-repeat;
+  height: 60rem;
+  padding: 2rem;
+}
+#container {
+
+}
+#list{
+
+}
+.inPut {
+  width: 100%
+}
+h1 {
+  text-align: center;
+}
+#goof {
+  font-weight: bold;
+  font-size: large;
+  color: #b73535;
+}
+button {
+  border-radius: 1rem;
+  color: #333;
+}
