@@ -1,14 +1,9 @@
 //Business Logic
 var gameChanger = function(ppBall){
-  var indexNum = 0;
-  var array = "";
+  var array = [];
   var result = "";
     for (var i = 1; i <= ppBall; i ++){
-      if (isNaN(ppBall)){
-        console.log(ppBall);
-        alert ("Please enter a whole positive number!")
-      }
-      else if (i % 15 == 0){
+      if (i % 15 == 0){
         result += " " + "ping-pong";
       }
       else if (i % 5 == 0){
@@ -21,10 +16,30 @@ var gameChanger = function(ppBall){
         result += " " + i;
       }
     }
-    return result;
-    for(var index = 0; index <result.length; index ++){
+    var array = result.split(" ");
 
-    }
+
+
+    document.getElementById("outPut").innerHTML = "<ul><li>" + array.join("</li><li>") + "</li></ul>";
+
+
+    // var indexNum = 0;
+    // for (var index = 0: index < array.length; index++) {
+    //   var item = document.createElement("li");
+    //   item.innerHTML = array[i];
+    //   items.appendChild(item);
+    // }
+
+    //
+    // for (var index = 0; index <= array.length; i++){
+    //   document.getElementById("array").children[0].innerHTML += "<li>"+array[array.length-1]+"</li>";
+    // }
+    // return final;
+
+    // return result;
+    // for(var index = 0; index <result.length; index ++){
+
+    // }
 
 
     // var output = "<ul><li>" + result("</li><li>") + "</li></ul>";
@@ -52,9 +67,9 @@ $(document).ready(function(){
     $("#outPut").text("");
     var serve = parseInt($("#inputNumber").val());
     // debugger;
-    var result = gameChanger(serve);
+    var final = gameChanger(serve);
     console.log(serve);
-    $("#outPut").text(result);
+    $("#outPut").text(final);
 
   event.preventDefault();
   });
