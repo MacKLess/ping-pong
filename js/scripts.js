@@ -1,36 +1,51 @@
 //Business Logic
 var gameChanger = function(ppBall){
-  // var array = [];
+  var indexNum = 0;
+  var array = "";
   var result = "";
     for (var i = 1; i <= ppBall; i ++){
-      if (i % 15 == 0){
-        result += "ping-pong";
+      if (isNaN(ppBall)){
+        console.log(ppBall);
+        alert ("Please enter a whole positive number!")
       }
-
+      else if (i % 15 == 0){
+        result += " " + "ping-pong";
+      }
       else if (i % 5 == 0){
-        result += "pong";
+        result += " " + "pong";
       }
-
       else if (i % 3 == 0){
-        result += "ping";
+        result += " " + "ping";
       }
       else {
-        result += i;
+        result += " " + i;
       }
     }
-    // result.push(array);
-    // return result;
     return result;
+    for(var index = 0; index <result.length; index ++){
+
+    }
+
+
+    // var output = "<ul><li>" + result("</li><li>") + "</li></ul>";
+    // //
+    // // function populateList(){
+    // //   for (var index = 0; index < result.length; index++){
+    // //
+    // //   }
+    // // }
+    // // for (i = 0; i < result.length; i++){
+    // //   document.write('<li>') + result[indexNum++] + '</li>');
+    // }
+
+
+    // // for (var index = 0; index <= result.length; i++){
+    // //   array += "<li>" + result + "</li>";
+    // }
 }
 
-// array.push(i);
 
 
-
-
-// if (isNan(ppBall) || ppBall < 0){
-//   alert ("Please enter a whole positive number!")
-// }
 // User Interface Logic
 $(document).ready(function(){
   $("#inPut").submit(function(event){

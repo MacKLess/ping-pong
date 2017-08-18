@@ -16,11 +16,11 @@ _The user inputs random numbers and those which fit a certain criteria will trig
 
 ## Specifications
 
-_It will provide a response when the following conditions are met:_
+_It will count up to the inputted number with the following exceptions:_
 
-* _Numbers divisible by 3: "ping"_
-* _Numbers divisible by 5: "pong"_
-* _Numbers divisible by 15: "ping-pong"_
+* _Numbers divisible by 3 display as "ping"_
+* _Numbers divisible by 5 display as "pong"_
+* _Numbers divisible by 15 display "ping-pong"_
 
 ## Known Bugs
 
