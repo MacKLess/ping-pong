@@ -13,15 +13,26 @@
     <div class="container">
       <h1>Number Ping-Pong!</h1>
       <form id="inPut">
-        <p>Let's play number ping-pong! Enter a random number and see whether we pop it back to you as a ping or as a pong!</p>
+        <p>Let's play number ping-pong! Enter a random number and see whether we pop it back to you as a ping or as a pong!
+        <h3>Rules:</h3>
+        We will count up to the number you provide from 1, with the following exceptions:
+        <ol>
+          <li>Numbers divisible by 3 return as "ping"</li>
+          <li>Numbers divisible by 5 return as "pong"</li>
+          <li>Numbers divisible by 15 return as "ping-pong"</li>
+        </ol>
+      </p>
+
         <div class="form-group">
           <label for="inputNumber">Enter your number here:</label>
           <input id="inputNumber" type="submit" name="name" value="">
         </div>
         <button type="submit" name="btn">Serve!</button>
       </form>
-      <div class="outPut">
-
+      <div>
+        <p><ul>
+          <li id="outPut"></li>
+        </ul></p>
       </div>
     </div>
   </body>
