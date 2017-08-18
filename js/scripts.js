@@ -3,7 +3,11 @@ var gameChanger = function(ppBall){
   // var array = [];
   var result = "";
     for (var i = 1; i <= ppBall; i ++){
-      if (i % 3 == 0){
+      if (i % 5 == 0){
+        result += "pong";
+      }
+
+      else if (i % 3 == 0){
         result += "ping";
       }
       else {
